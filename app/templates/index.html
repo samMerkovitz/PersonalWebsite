@@ -1,0 +1,112 @@
+{% extends "nav-menu.html" %}
+
+{% block content %}
+<section class="header-section" >
+    <div class="header-container">
+        <div class="header-wrapper">
+            <h1 class="welcome-header">Hey there! Welcome to my website.</h1>
+            <div class="scrolldown-wrapper">
+                <div class="scrolldown">
+                    <svg height="30" width="10">
+                        <circle class="scrolldown-p1" cx="5" cy="15" r="2" />
+                        <circle class="scrolldown-p2" cx="5" cy="15" r="2" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="education-section fade-in">
+    <div class="education-container">
+        <h1 class="section-header">
+            Education
+        </h1>
+        <p>
+            I am a Northeastern University Student (Class of 2021) studying Computer Science and Philosophy with a minor in Computational Social Sciences. My interests include....
+        </p>
+    </div>
+</section>
+
+<section>
+    <div class="experience-container fade-in">
+        <h1 class="section-header">
+            Experience
+        </h1>
+        <p id="first-exp">
+            <strong>Genentech</strong> dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.
+        </p>
+        <p id="second-exp">
+            <strong>Harvard Medical School Office for External Education</strong> ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.
+        </p>
+        <p id="third-exp">
+            <strong>MullenLowe</strong> ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.
+        </p>
+    </div>
+</section>
+
+<section class="projects-section fade-in">
+    <div class="projects-container">
+        <h1 class="section-header">
+            Projects
+        </h1>
+        <div class="projects-grid-container">
+            <div class="grid-projects-item1">
+                <div class='grid-item-wrapper'>
+                    <h4>
+                        Prediction College Basketball Game Winners using Machine Learning
+                    </h4>
+                    <p>
+                        Final Project for CS4100 - Artificial IntelligenceBased on Kaggle's March Madness Competition, created machine learning models to best predict the outcomes of college basketball games. Created four feature sets using available data from the competition according to different statistical models used for common analysis and prediction methods.Machine Learning models used: Logistic Regression, Random Forest, Naive Bayes, ANNLibraries Used: Pandas, Numpy, Matplot, Seaborn, Scikit Learn, Tensorflow
+                    </p>
+                </div>
+            </div>
+            <div class="grid-projects-item2">
+
+            </div>
+            <div class="grid-projects-item3">
+            </div>
+            <div class="grid-projects-item4">
+                <div class='grid-item-wrapper'>
+                    <h4>
+                        Boston Property Tax Dataset Analysis
+                    </h4>
+                    <p>
+                        Explored Boston Property Tax dataset from the Boston Area Research Initiative with intent of forming a public policy proposal based on findingsProposed a methodology to measure change in urbanization in Boston based on year-over-year changes in the dataset. Used ANOVA, Correlation/Pearson’s R, ggplot2, and other libraries in order to run analyses and create visualizations
+                    </p>
+                </div>
+            </div>
+            <div class="grid-projects-item5">
+                <div class='grid-item-wrapper'>
+                    <h4>
+                        World Happiness Ratings Analysis
+                    </h4>
+                    <p>
+                        Exploratory Data Analysis of the World Happiness Scores from a Kaggle dataset (linked in the python notebook). This project examines the relationship between category values and a country's happiness score. This project uses Economy/GDP ratings to examine this relationship.Libraries Used: Pandas, Numpy, Matplot, Seaborn
+                    </p>
+            </div>
+            </div>
+            <div class="grid-projects-item6">
+            
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- 
+<section class="tabbed-projects">
+    <div class="accordion-container">
+        <input type="radio" name="name" checked="checked"/>
+        <div ></div>
+        <input type="radio" name="name"/>
+        <div ></div>
+        <input type="radio" name="name"/>
+        <div ></div>
+        <input type="radio" name="name"/>
+        <div ></div>
+    </div>
+</section> -->
+
+    
+{% endblock %}

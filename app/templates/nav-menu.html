@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/main.css') }}" />
+    </head>
+    <body>
+        <div class="nav-menu" data-collapse="medium" data-animation="default" data-duration="400" role="banner">
+            <div class="nav-items">
+                <div class="nav-wrapper">
+                    <nav role="navigation" class="nav-items-in-menu">
+                        <a href="{{ url_for('index')}}" aria-current="page" class="home-button">HOME</a>
+                        <a href='/' aria-current="page" class="about-button">ABOUT</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        
+        {% block content %}{% endblock %}
+        <script src="static/javascript/jquery.js"></script> 
+        <script src="static/javascript/fadein.js"></script> 
+    </body>
+
+
+
+
+
+</html>
