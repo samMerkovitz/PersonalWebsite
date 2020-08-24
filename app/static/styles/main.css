@@ -2,8 +2,12 @@ body {
     font-family: Montserrat, sans-serif;
     background-color: black;
     color: white;
-    letter-spacing: 1px
+    letter-spacing: 1px;
+    cursor: url('../img/hand-cursor.png'), auto;
+
 }
+
+
 
 p {
     padding-left: 10%;
@@ -13,6 +17,15 @@ p {
     line-height: 28px;
 }
 
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    cursor: url('../img/hand-cursor.png'), auto;
+    
+}
 .fade-in {
     opacity: 0;
     transform: translateY(20vh);
@@ -197,6 +210,27 @@ p {
     padding-left: 10%;
 }
 
+.about-me-p {
+    font-family: 'Libre Baskerville', serif; 
+    font-size: 38px;
+    line-height: 65px;
+}
+
+.about-me-select {
+    font-family: 'Libre Baskerville', serif; 
+    font-size: 38px;
+    line-height: 65px;
+    border: 0;
+    border-bottom: 2px solid;
+    border-bottom-color: white;
+    background-color: black;
+    color: grey;
+    
+}    
+
+.about-me-select:hover {
+    color: lighten(white, 20%);
+}
 
 /* Scroll Down */
 
@@ -310,3 +344,4 @@ input[type="radio"] {
     transition: transform 0.4s ease 0.4s;
     transition: transform 0.4s ease 0.4s, -webkit-transform 0.4s ease 0.4s;
   }
+
