@@ -3,11 +3,16 @@ body {
     background-color: black;
     color: white;
     letter-spacing: 1px;
-    cursor: url('../img/hand-cursor.png'), auto;
 
 }
 
+html {
+    cursor: url('../img/hand-cursor.png'), auto;
+}
 
+a {
+    cursor: url('../img/external.png'), auto;
+}
 
 p {
     padding-left: 10%;
@@ -24,8 +29,17 @@ select {
     -ms-appearance: none;
     appearance: none;
     cursor: url('../img/hand-cursor.png'), auto;
-    
 }
+
+footer {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    text-align: right;
+}
+
+
 .fade-in {
     opacity: 0;
     transform: translateY(20vh);
@@ -74,13 +88,16 @@ select {
 
 
 .nav-menu {
+    position: fixed;
+    top: 0;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-self: start;
     padding-left: 50px;
     padding-right: 50px;
     padding-top: 30px;
-    padding-right: 30px;
+    z-index: 1;
 }
 
 .nav-items {
@@ -124,9 +141,16 @@ select {
 
 .education-container {
     display: block;
+    padding-right: 50px;
+}
+
+.experience-section {
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .section-header {
+    color: white;
     display: block;
     font-weight: normal;
     font-size: 44px;
@@ -224,14 +248,105 @@ select {
     border-bottom: 2px solid;
     border-bottom-color: white;
     background-color: black;
-    color: grey;
+    color: white;
     
 }    
 
-.about-me-select:hover {
-    color: lighten(white, 20%);
+
+.tabs {
+    margin-left: 50%;
+    margin-top: 200px;
+    transform:translate(-50%,-50%);
+    height:50%;
 }
 
+.tabs .tab-header {
+    display:flex;
+    height:80px;
+}
+
+.tabs .tab-header > div {
+    position:relative;
+    width:calc(100% / 3);
+    height:100%;
+    text-align:center;
+    line-height:80px;
+    font-weight:600;
+    color:black;
+
+    z-index:2;
+}
+
+#first-tab {
+    background-color: aqua;
+}
+
+#second-tab {
+    background-color: pink;
+}
+
+#third-tab {
+    background-color: yellow;
+}
+
+.tabs .tab-header > div:before {
+    content:"";
+    position:absolute;
+    bottom:0px;
+    left:0px;
+    width:100%;
+    height:0%;
+    background:white;
+    z-index:-1;
+  }
+  .tabs .tab-header > div:hover:before {
+    transition:all 300ms ease-in-out;
+    height:5%;
+  }
+  .tabs .tab-header > div.active {
+    color:#00acee;
+  }
+  .tabs .tab-header > div.active:before {
+    transition:all 300ms ease-in-out;
+    height:100%;
+  }
+  .tabs .tab-content {
+    position:relative;
+    background:aqua;
+    height:calc(100% - 80px);
+    overflow:hidden;
+  }
+  .tabs .tab-content > div {
+    position:absolute;
+    transform:scale(0.5);
+    opacity:0;
+    top:200%;
+    padding:20px;
+    transition:all 500ms ease-in-out;
+  }
+  .tabs .tab-content > div.active {
+    transform:scale(1);
+    opacity:1;
+    top:0%;
+  }
+
+div.active#first-tab {
+    background-color: aqua;
+    color: black;
+    height: 100%;
+}
+
+div.active#second-tab-div {
+    background-color: pink;
+    color: white;
+    height: 100%;
+  }
+
+div.active#third-tab-div {
+    background-color: yellow;
+    color: black;
+    height: 100%;
+  }
 /* Scroll Down */
 
 .scrolldown-wrapper {
@@ -308,40 +423,18 @@ select {
     background-color: #80d6ff;
 }
 
+.github {
 
+    height: 40px;
+    width: 40px;
+}
 
-input[type="radio"] {
-    left: 0;
-    width: 10px;
-    height: 25%;
-    outline: 10px solid;
-    outline-offset: -10px;
-    margin: 0;
-    z-index: 1;
-    cursor: pointer;
+img {
+    -webkit-transition: -webkit-transform .8s ease-in-out;
+    transition:         transform .8s ease-in-out;
+}
+img:hover {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+            transform: rotate(360deg);
   }
-  input[type="radio"]:nth-of-type(1) {
-    outline-color: #f06868;
-    top: 0%;
-  }
-  input[type="radio"]:nth-of-type(2) {
-    outline-color: #fab57a;
-    top: 25%;
-  }
-  input[type="radio"]:nth-of-type(3) {
-    outline-color: #edf798;
-    top: 50%;
-  }
-  input[type="radio"]:nth-of-type(4) {
-    outline-color: #80d6ff;
-    top: 75%;
-  }
-  input[type="radio"]:checked + div {
-    -webkit-transform: translateX(0%);
-            transform: translateX(0%);
-    -webkit-transition: -webkit-transform 0.4s ease 0.4s;
-    transition: -webkit-transform 0.4s ease 0.4s;
-    transition: transform 0.4s ease 0.4s;
-    transition: transform 0.4s ease 0.4s, -webkit-transform 0.4s ease 0.4s;
-  }
-
