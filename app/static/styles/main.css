@@ -168,9 +168,28 @@ footer {
 
 .projects-header-wrapper {
     margin-top: 100px;
-    margin-bottom: 140px;
     text-align: center;
 
+}
+
+.project-grid {
+    padding: 10%;
+    flex: 1 1 80%;
+
+}
+
+.portfolio {
+    display: grid;
+    height: 100%;
+}
+
+.portfolio-item {
+    background: white;
+    color: black;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .page-title {
