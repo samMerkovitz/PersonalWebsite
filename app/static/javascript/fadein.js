@@ -44,13 +44,8 @@
       });
 
 
-
-
-      
-      $(window).scroll(function() {
+    $(window).scroll(function() {
         $('.fade-in').each(function() {
-
-
             var top_of_element = $(this).offset().top;
             var bottom_of_element = $(this).offset().top + $(this).outerHeight();
             var bottom_of_screen = $(window).scrollTop() + $(window).innerHeight();
@@ -62,3 +57,5 @@
             }
         });
     });
+
+      

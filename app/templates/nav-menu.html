@@ -7,10 +7,12 @@
             <div class="nav-items">
                 <div class="nav-wrapper">
                     <nav role="navigation" class="nav-items-in-menu">
-                        <a href='#education-container' aria-current="page" class="about-button">ABOUT</a>
-                        <a href='#experience-section' aria-current="page" class="about-button">EXPERIENCE</a>
-                        <a href='#projects-section' aria-current="page" class="about-button">PROJECTS</a>
-                        <a href="www.linkedin.com/in/sam-merkovitz" aria-current="page" class="about-button" target="__blank">LINKEDIN</a>
+                        <a href='/index' aria-current="page" class="home-button">HOME</a>
+                        <a href='/index#education-container' aria-current="page" class="about-button">ABOUT</a>
+                        <a href='/index#experience-section' aria-current="page" class="about-button">EXPERIENCE</a>
+                        <a href="{{ url_for('projects')}}" aria-current="page" class="about-button">PROJECTS</a>
+                        <a href="https://www.linkedin.com/in/sam-merkovitz" aria-current="page" class="about-button" target="__blank">LINKEDIN</a>
+                        
                     </nav>
                 </div>
             </div>
@@ -20,6 +22,7 @@
         {% block content %}{% endblock %}
         <script src="static/javascript/jquery.js"></script> 
         <script src="static/javascript/fadein.js"></script> 
+ 
     </body>
 
 
