@@ -1,6 +1,37 @@
-{% extends "nav-menu.html" %}
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="styles/main.css" />
+    </head>
+    <body>
+        <div class="nav-menu" id="nav-menu" data-collapse="medium" data-animation="default" data-duration="400" role="banner">
+            <div class="nav-items">
+                <div class="nav-wrapper">
+                    <nav role="navigation" class="nav-items-in-menu">
+                        <a href='/index' aria-current="page" class="home-button">HOME</a>
+                        <a href='/index#education-container' aria-current="page" class="about-button">ABOUT</a>
+                        <a href='/index#experience-section' aria-current="page" class="about-button">EXPERIENCE</a>
+                        <a href="/index#projects-section" aria-current="page" class="about-button">PROJECTS</a>
+                        <a href="https://www.linkedin.com/in/sam-merkovitz" aria-current="page" class="about-button" target="__blank">LINKEDIN</a>
+                        
+                        
+                    </nav>
+                    <div class="sidenav-menu" >
+                        <img onclick="openNav()" class="menu-icon" alt="" src="{{ url_for('static', filename='img/menu-icon.png') }}"></img>
+                        <div class="sidenav"id=mySideNav>
+                            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                            <a href='/index' aria-current="page" class="home-button">HOME</a>
+                            <a href='/index#education-container' aria-current="page" class="about-button">ABOUT</a>
+                            <a href='/index#experience-section' aria-current="page" class="about-button">EXPERIENCE</a>
+                            <a href="/index#projects-section" aria-current="page" class="about-button">PROJECTS</a>
+                            <a href="https://www.linkedin.com/in/sam-merkovitz" aria-current="page" class="about-button" target="__blank">LINKEDIN</a>
+                        </div>
 
-{% block content %}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
 
         <section class="header-section" >
             <div class="header-container">
@@ -25,7 +56,7 @@
                     About Me
                 </h1>
                 <p class="about-me-p">
-                    I am a Northeastern University Student (Class of 2021) studying Computer Science and Philosophy with a minor in Computational Social Sciences. I am interested in 
+                    I am a Northeastern University Student (Class of 2021) studying Computer Science and Philosophy with a minor in Computational Social Sciences. I am interested in 
                     <select class="about-me-select">
                         <option>creating websites</option>
                         <option>using data to make decisions</option>
@@ -66,13 +97,11 @@
         </section>
 
         <section class="projects-tab" id="projects-section">
-            
             <div> 
                 <h1 class="section-header">
                     Projects
                 </h1>
             </div>
-            <div class="projects-container">
             <section class="projects">
                 <details open>
                 <summary>
@@ -125,11 +154,19 @@
                     </p>
                     </div>
                 </details>
-            
             </section>
-        </div>
         </section>
 
 
 
-{% endblock %}
+
+<script src="static/javascript/jquery.js"></script> 
+<script src="static/javascript/fadein.js"></script> 
+
+</body>
+
+
+
+
+
+</html>
