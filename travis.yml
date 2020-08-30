@@ -1,5 +1,14 @@
 language: python
-language: python
-python:
-  - "2.7"
+node_js:
   - "3.7"
+
+branches:
+  only:
+    - master
+
+before_script:
+  - npm install -g firebase-tools
+
+
+after_success:
+  - firebase deploy --token=1//06gDIsmn3O_e6CgYIARAAGAYSNwF-L9IroPMs0hcOrZWZm2kUiUoPwZNpgwvAjZfVJClfl4SW2-0vCAPGck2Wm5uGF16NC6lq8zs
