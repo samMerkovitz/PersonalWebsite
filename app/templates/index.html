@@ -1,37 +1,6 @@
-<html>
-    <head>
-        <link rel="stylesheet" type="text/css" href="styles/main.css" />
-    </head>
-    <body>
-        <div class="nav-menu" id="nav-menu" data-collapse="medium" data-animation="default" data-duration="400" role="banner">
-            <div class="nav-items">
-                <div class="nav-wrapper">
-                    <nav role="navigation" class="nav-items-in-menu">
-                        <a href='/index' aria-current="page" class="home-button">HOME</a>
-                        <a href='/index#education-container' aria-current="page" class="about-button">ABOUT</a>
-                        <a href='/index#experience-section' aria-current="page" class="about-button">EXPERIENCE</a>
-                        <a href="/index#projects-section" aria-current="page" class="about-button">PROJECTS</a>
-                        <a href="https://www.linkedin.com/in/sam-merkovitz" aria-current="page" class="about-button" target="__blank">LINKEDIN</a>
-                        
-                        
-                    </nav>
-                    <div class="sidenav-menu" >
-                        <img onclick="openNav()" class="menu-icon" alt="" src="{{ url_for('static', filename='img/menu-icon.png') }}"></img>
-                        <div class="sidenav"id=mySideNav>
-                            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                            <a href='/index' aria-current="page" class="home-button">HOME</a>
-                            <a href='/index#education-container' aria-current="page" class="about-button">ABOUT</a>
-                            <a href='/index#experience-section' aria-current="page" class="about-button">EXPERIENCE</a>
-                            <a href="/index#projects-section" aria-current="page" class="about-button">PROJECTS</a>
-                            <a href="https://www.linkedin.com/in/sam-merkovitz" aria-current="page" class="about-button" target="__blank">LINKEDIN</a>
-                        </div>
+{% extends "nav-menu.html" %}
 
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        
+{% block content %}
 
         <section class="header-section" >
             <div class="header-container">
@@ -159,11 +128,7 @@
 
 
 
-
-<script src="static/javascript/jquery.js"></script> 
-<script src="static/javascript/fadein.js"></script> 
-
-</body>
+{% endblock %}
 
 
 

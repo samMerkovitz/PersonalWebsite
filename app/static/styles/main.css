@@ -361,8 +361,7 @@ summary {
 }
 
 
-<<<<<<< HEAD:app/static/styles/main.css
-=======
+
 .about-me-p {
     font-family: 'Libre Baskerville', serif; 
     font-size: 38px;
@@ -384,7 +383,7 @@ summary {
 
 
 
->>>>>>> 97df5ed00f26ea6ede7ec82fee5380959f70a0bf:public/app/static/styles/main.css
+
 /* Scroll Down */
 
 .scrolldown-wrapper {
@@ -432,23 +431,22 @@ summary {
 	}
 }
 
-<<<<<<< HEAD:app/static/styles/main.css
+
 .github {
     height: 40px;
     width: 40px;
 }
-=======
 
 
 
 
->>>>>>> 97df5ed00f26ea6ede7ec82fee5380959f70a0bf:public/app/static/styles/main.css
 
 .github-link {
     text-decoration: underline;
     padding-top: 15px;
     color: white;
 }
+
 
 
 .projects {
